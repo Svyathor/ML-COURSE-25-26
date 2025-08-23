@@ -31,7 +31,7 @@
 
 > Примечание: В таблице указаны пороги для сданных в срок заданий. В [презентации](./slides/intro/ML_grading_system.pdf) описаны SOS-случаи, позволяющие добрать баллы в конце семестра, и пороги для них. 
 
-<img src="./slides/intro/figures/fall.png" alt="Пороги на зачет в осеннем семестре" height="400">
+<img src="./slides/intro/figures/fall.png" alt="Пороги на зачет в осеннем семестре" width="100%">
 
 <br>
 <br>
