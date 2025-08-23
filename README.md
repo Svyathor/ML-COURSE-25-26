@@ -6,9 +6,11 @@
 
 ## Система оценивания
 
-TODO: система оценивания
+[Презентация с правилами оценивания](./slides/intro/ML_grading_system.pdf)
 
-TODO: ссылка на видео с описанием
+[Поясняющее видео](https://disk.yandex.ru/i/0QSSuWMEFeo6JQ)
+
+
 
 ---
 
