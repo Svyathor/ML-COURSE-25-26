@@ -77,13 +77,13 @@
             <td rowspan="2">Основы Numpy + Pandas + Визуализация</td>
             <td rowspan="2">18.09.2025</td>
             <td>03.10.2025</td>
-            <td><span>Base[UT, CV]</span></td>
+            <td><span>Base[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
             <td>2</td>
             <td>03.10.2025</td>
-            <td><span>Research[UT, CV]</span></td>
+            <td><span>Research[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
@@ -92,14 +92,14 @@
             <td>Sklearn-scaling-cv</td>
             <td rowspan="2">02.10.2025</td>
             <td>10.10.2025</td>
-            <td><span>Base[UT, CV]</span></td>
+            <td><span>Base[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
             <td>2</td>
             <td>kNN</td>
             <td>17.10.2025</td>
-            <td><span>Research[UT, CV]</span></td>
+            <td><span>Research[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
@@ -108,7 +108,7 @@
             <td>Анализ данных и обработка признаков</td>
             <td>09.10.2025</td>
             <td>17.10.2025</td>
-            <td><span>Base[UT, CV]</span></td>
+            <td><span>Base[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
@@ -117,12 +117,12 @@
             <td rowspan="2">Линейные модели: регрессия</td>
             <td rowspan="2">16.10.2025</td>
             <td rowspan="2">24.10.2025</td>
-            <td><span>Base[UT, CV]</span></td>
+            <td><span>Base[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
             <td>2</td>
-            <td><span>Research[UT, CV]</span></td>
+            <td><span>Research[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
@@ -131,13 +131,13 @@
             <td rowspan="2">Линейные модели: классификация</td>
             <td rowspan="2">23.10.2025</td>
             <td>31.10.2025</td>
-            <td><span>Base[UT, CV]</span></td>
+            <td><span>Base[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
             <td>2</td>
             <td>07.11.2025</td>
-            <td><span>Research[UT, CV]</span></td>
+            <td><span>Research[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
@@ -146,13 +146,13 @@
             <td rowspan="2">SVM</td>
             <td rowspan="2">27.11.2025</td>
             <td>05.12.2025</td>
-            <td><span>Base[UT, CV]</span></td>
+            <td><span>Base[UT, PR]</span></td>
             <td></td>
         </tr>
         <tr>
             <td>2</td>
             <td>12.12.2025</td>
-            <td><span>Research[UT, CV]</span></td>
+            <td><span>Research[UT, PR]</span></td>
             <td></td>
         </tr>
     </tbody>
@@ -161,8 +161,8 @@
 ### Условные обозначения
 
 - Base[UT] - Базовое задание с unit-тестами
-- Base[UT, CV] - Базовое задание с unit-тестами и кросс-валидацие
-- Research[UT, CV] - Исследовательское задание с unit-тестами и кросс-валидацией
+- Base[UT, PR] - Базовое задание с unit-тестами и кросс-проверкой
+- Research[UT, PR] - Исследовательское задание с unit-тестами и кросс-проверкой
 
 
 ## Материалы
