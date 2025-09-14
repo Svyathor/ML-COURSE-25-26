@@ -47,6 +47,124 @@
 
 ---
 
+## Практические задания
+
+<table>
+    <thead>
+        <tr>
+            <th>Номер</th>
+            <th>Часть</th>
+            <th>Название</th>
+            <th>Дата выдачи</th>
+            <th>Дедлайн</th>
+            <th>Типы подзаданий</th>
+            <th>Ссылка</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>Основы Python</td>
+            <td>14.09.2025</td>
+            <td>22.09.2025</td>
+            <td><span >Base[UT]</span></td>
+            <td><a href="./tasks/task1/">Ссылка</a></td>
+        </tr>
+        <tr>
+            <td rowspan="2">2</td>
+            <td>1</td>
+            <td rowspan="2">Основы Numpy + Pandas + Визуализация</td>
+            <td rowspan="2">18.09.2025</td>
+            <td>03.10.2025</td>
+            <td><span>Base[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>03.10.2025</td>
+            <td><span>Research[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td>1</td>
+            <td>Sklearn-scaling-cv</td>
+            <td rowspan="2">02.10.2025</td>
+            <td>10.10.2025</td>
+            <td><span>Base[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>kNN</td>
+            <td>17.10.2025</td>
+            <td><span>Research[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>1</td>
+            <td>Анализ данных и обработка признаков</td>
+            <td>09.10.2025</td>
+            <td>17.10.2025</td>
+            <td><span>Base[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">5</td>
+            <td>1</td>
+            <td rowspan="2">Линейные модели: регрессия</td>
+            <td rowspan="2">16.10.2025</td>
+            <td rowspan="2">24.10.2025</td>
+            <td><span>Base[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><span>Research[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">6</td>
+            <td>1</td>
+            <td rowspan="2">Линейные модели: классификация</td>
+            <td rowspan="2">23.10.2025</td>
+            <td>31.10.2025</td>
+            <td><span>Base[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>07.11.2025</td>
+            <td><span>Research[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">7</td>
+            <td>1</td>
+            <td rowspan="2">SVM</td>
+            <td rowspan="2">27.11.2025</td>
+            <td>05.12.2025</td>
+            <td><span>Base[UT, CV]</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>12.12.2025</td>
+            <td><span>Research[UT, CV]</span></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+### Условные обозначения
+
+- Base[UT] - Базовое задание с unit-тестами
+- Base[UT, CV] - Базовое задание с unit-тестами и кросс-валидацие
+- Research[UT, CV] - Исследовательское задание с unit-тестами и кросс-валидацией
+
+
 ## Материалы
 
 * [Первый поток (В.В. Китов)](./1_stream.md)
