@@ -1,2 +1,2 @@
-# Ваш код здесь, содержит функцию find_modified_max_argmax. Удалите этот комент при сдаче задания
+def find_modified_max_argmax(L,f):I=[f(x)for x in L if type(x)==int];return I and(max(I),I.index(max(I)))or()
 
