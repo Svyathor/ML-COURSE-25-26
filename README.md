@@ -95,7 +95,7 @@
             <td rowspan="2">02.10.2025</td>
             <td>10.10.2025</td>
             <td><span>Base[UT, PR]</span></td>
-            <td><a href="./tasks/base_task1/">Ссылка</a></td>
+            <td><a href="./tasks/base_task3/">Ссылка</a></td>
         </tr>
         <tr>
             <td>2</td>
