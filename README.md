@@ -95,14 +95,14 @@
             <td rowspan="2">02.10.2025</td>
             <td>10.10.2025</td>
             <td><span>Base[UT, PR]</span></td>
-            <td></td>
+            <td><a href="./tasks/base_task1/">Ссылка</a></td>
         </tr>
         <tr>
             <td>2</td>
             <td>kNN</td>
             <td>17.10.2025</td>
             <td><span>Research[UT, PR]</span></td>
-            <td></td>
+            <td><a href="./tasks/research_task2/">Ссылка</a></td>
         </tr>
         <tr>
             <td>4</td>
