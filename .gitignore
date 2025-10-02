@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Large local datasets
+tasks/base_task2/public_tests/
