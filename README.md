@@ -108,10 +108,10 @@
             <td>4</td>
             <td>1</td>
             <td>Анализ данных и обработка признаков</td>
-            <td>09.10.2025</td>
-            <td>17.10.2025</td>
-            <td><span>Base[UT, PR]</span></td>
-            <td></td>
+            <td>12.10.2025</td>
+            <td>20.10.2025</td>
+            <td><span>Base[PR]</span></td>
+            <td><a href="./tasks/base_task4/">Ссылка</a></td>
         </tr>
         <tr>
             <td rowspan="2">5</td>
