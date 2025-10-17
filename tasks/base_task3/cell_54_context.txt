@@ -1,0 +1,86 @@
+
+================================================================================
+Cell 47 (code)
+================================================================================
+from matplotlib.colors import ListedColormap
+from sklearn import neighbors, datasets
+
+def plot_knn_bound(X, y, scaler=None, n_neighbors=10, xlim=(-15, 15), ylim=(-20, 20)):
+    # step size in the mesh
+    h = 0.05
+
+    # Create color maps
+    cmap_light = ListedColormap(['plum', 'blue', 'plum', 'green'][:np.unique(y).shape[0]])
+    cmap_bold = ['plum', 'blue', 'plum', 'darkgreen'][:np.unique(y).shape[0]]
+
+    x_min, x_max = xlim
+    y_min, y_max = ylim
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
+                         np.arange(y_min, y_max, h))
+    grid = np.c_[xx.ravel(), yy.ravel()]
+
+    X_scaled = X # if scaler is None
+    if scaler is not None:
+        grid = scaler.transform(grid)
+        X_scaled = scaler.transform(X)
+
+    # we create an instance of Neighbours Classifier and fit the data.
+    clf = neighbors.KNeighborsClassifier(n_neighbors, algorithm='brute')
+    clf.fit(X_scaled, y)
+
+    Z = clf.predict(grid)
+
+    # Put the result into a color plot
+    Z = Z.reshape(xx.shape)
+    plt.contourf(xx, yy, Z, cmap=cmap_light)
+
+    # Plot also the training points
+    sns.scatterplot(x=X[:, 0], y=X[:, 1], hue=y,
+                    palette=cmap_bold, alpha=1.0, edgecolor="black")
+    plt.xlabel('x_1')
+    plt.ylabel('x_2')
+    plt.title('Разделющие поверхности алгоритма {}-NN'.format(n_neighbors))
+    plt.grid()
+    plt.show()
+
+================================================================================
+Cell 48 (markdown)
+================================================================================
+Нарисуем разделющие поверхности $1$-$NN$ и $10$-$NN$
+
+================================================================================
+Cell 49 (code)
+================================================================================
+plot_knn_bound(X, y, n_neighbors=1)
+plot_knn_bound(X, y, n_neighbors=10)
+
+================================================================================
+Cell 50 (markdown)
+================================================================================
+### <font color='DarkOrange'>**Задание 1.2 (кросс-проверка, 2 балла)**</font>
+
+Чем отличаются поверхности, полученные при числе соседей 1 и 10? Объясните, чем вызваны данные отличия
+
+================================================================================
+Cell 51 (markdown)
+================================================================================
+<font color='MediumOrchid'>**Ваши выводы тут:**</font>
+
+================================================================================
+Cell 52 (markdown)
+================================================================================
+---
+
+================================================================================
+Cell 53 (markdown)
+================================================================================
+### <font color='DarkOrange'>**Задание 1.3 (кросс-проверка, 1 балл)**</font>
+
+Данную проблему может решить нормализация признакового пространства.
+
+Начертите разделяющие поверхности для $KNN$, обученного на нормализованных признаках с помощью реализованных вами нормализаторов. Используйте функцию $plot\_knn\_bound$. Менять функцию $plot\_knn\_bound$ нельзя.
+
+================================================================================
+Cell 54 (code)
+================================================================================
+# your code here

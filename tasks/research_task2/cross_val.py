@@ -19,7 +19,22 @@ def kfold_split(num_objects: int,
     contains all indexes without i-th fold while the 2nd
     one contains i-th fold
     """
-    pass
+    indices = np.arange(num_objects)
+    fold_size = num_objects // num_folds
+    result = []
+
+    for i in range(num_folds):
+        start = i * fold_size
+        if i == num_folds - 1:
+            end = num_objects
+        else:
+            end = (i + 1) * fold_size
+
+        val_indices = indices[start:end]
+        train_indices = np.concatenate([indices[:start], indices[end:]])
+        result.append((train_indices, val_indices))
+
+    return result
 
 
 def knn_cv_score(X: np.ndarray, y: np.ndarray, parameters: dict[str, list],
@@ -46,4 +61,37 @@ def knn_cv_score(X: np.ndarray, y: np.ndarray, parameters: dict[str, list],
     dict: key - tuple of (normalizer_name, n_neighbors, metric, weight),
     value - mean score over all folds
     """
-    pass
+    results = defaultdict(list)
+
+    for normalizer, normalizer_name in parameters['normalizers']:
+        for n_neighbors in parameters['n_neighbors']:
+            for metric in parameters['metrics']:
+                for weight in parameters['weights']:
+                    for train_idx, val_idx in folds:
+                        X_train_fold = X[train_idx]
+                        y_train_fold = y[train_idx]
+                        X_val_fold = X[val_idx]
+                        y_val_fold = y[val_idx]
+
+                        if normalizer is not None:
+                            normalizer_fitted = type(normalizer)()
+                            normalizer_fitted.fit(X_train_fold)
+                            X_train_fold = normalizer_fitted.transform(X_train_fold)
+                            X_val_fold = normalizer_fitted.transform(X_val_fold)
+
+                        knn = knn_class(
+                            n_neighbors=n_neighbors,
+                            metric=metric,
+                            weights=weight
+                        )
+                        knn.fit(X_train_fold, y_train_fold)
+                        y_pred = knn.predict(X_val_fold)
+                        score = score_function(y_val_fold, y_pred)
+                        key = (normalizer_name, n_neighbors, metric, weight)
+                        results[key].append(score)
+
+    mean_results = {}
+    for key, scores in results.items():
+        mean_results[key] = np.mean(scores)
+
+    return mean_results

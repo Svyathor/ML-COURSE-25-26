@@ -1,0 +1,8 @@
+Total cells requiring work: 6
+
+Cell 2 (markdown): your_code, ваш_код, answer_required
+Cell 51 (markdown): answer_required
+Cell 54 (code): your_code, empty_code
+Cell 76 (code): your_params, your_fit
+Cell 80 (code): your_code
+Cell 81 (markdown): answer_required
