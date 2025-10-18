@@ -1,2 +1,0 @@
-Cell 30:
-<font color='MediumOrchid'>**Ваше обоснование тут, можно использовать LaTeX:**</font>

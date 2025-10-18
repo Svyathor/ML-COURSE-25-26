@@ -1,2 +1,0 @@
-Cell 57:
-<font color='MediumOrchid'>**Ваш ответ тут:**</font>
