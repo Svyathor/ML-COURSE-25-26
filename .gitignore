@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+.claude/
 
 # Large local datasets
 tasks/base_task2/public_tests/
