@@ -117,15 +117,15 @@
             <td rowspan="2">5</td>
             <td>1</td>
             <td rowspan="2">Линейные модели: регрессия</td>
-            <td rowspan="2">16.10.2025</td>
-            <td rowspan="2">24.10.2025</td>
-            <td><span>Base[UT, PR]</span></td>
-            <td></td>
+            <td rowspan="2">19.10.2025</td>
+            <td rowspan="2">27.10.2025</td>
+            <td><span>Base[PR]</span></td>
+            <td><a href="./tasks/base_task5/">Ссылка</a></td>
         </tr>
         <tr>
             <td>2</td>
-            <td><span>Research[UT, PR]</span></td>
-            <td></td>
+            <td><span>Research[PR]</span></td>
+            <td><a href="./tasks/research_task3/">Ссылка</a></td>
         </tr>
         <tr>
             <td rowspan="2">6</td>
