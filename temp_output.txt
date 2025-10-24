@@ -1,0 +1,4 @@
+  File "<string>", line 10
+    print(f'\n{= * 80}')
+               ^
+SyntaxError: f-string: valid expression required before '='
